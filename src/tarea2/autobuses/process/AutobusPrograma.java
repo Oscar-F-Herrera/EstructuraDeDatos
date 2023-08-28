@@ -5,15 +5,25 @@ import tarea2.utils.ListaEnlazada;
 
 import java.util.Scanner;
 
+/**
+ * Esta clase trabaja con la lista del autobus agregando o eliminando pasajeros
+ */
 public class AutobusPrograma {
     public static ListaEnlazada<String> ListaBus = new ListaEnlazada<>();
 
+    /**
+     * Este método agrega 3 pasajeros a la lista del autobus y ejecuta el método operacionLista
+     */
     public static void busSetup(){
         ListaBus.add("Pedro");
         ListaBus.add("Maria");
         ListaBus.add("Carlos");
         AutobusPrograma.operacionLista();
     }
+
+    /**
+     * Este método obtiene un dato en base al método accionUsuario y realiza una accion dependiendo de ese dato
+     */
     public static void operacionLista() {
 
         String accionarealizar;

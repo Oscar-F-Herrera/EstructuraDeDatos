@@ -2,7 +2,14 @@ package tarea2.autobuses.ui;
 
 import java.util.Scanner;
 
+/**
+ * Mediante esta clase el usuario elige que accion realizar
+ */
 public class CLI {
+    /**
+     * Pregunta al usuario que accion quiere realizar
+     * @return la accion elegida por el usuario
+     */
     public static String accionUsuario (){
 
         System.out.println("Por favor escoga la accion que quiere realizar");
