@@ -1,4 +1,4 @@
-package tarea2.utils;
+package edu.oscar.herrera.utils;
 
 import java.util.Optional;
 
@@ -29,6 +29,9 @@ public class ListaEnlazada<E> implements Lista<E> {
 
     @Override
     public void remove(E e) {
+        if (firstNode.isEmpty()){
+            return;
+        }
         if(firstNode.get().data == e){
             firstNode = firstNode.get().next;
         } else {
@@ -111,5 +114,15 @@ public class ListaEnlazada<E> implements Lista<E> {
 
     public Optional<Node<E>> getFirstNode(){
         return firstNode;
+    }
+
+    public void addFirst(E e){
+        Optional <Node<E>> newNode = Optional.of(new Node<>(e));
+        newNode.get().next = firstNode;
+        firstNode = newNode;
+    }
+
+    public void removeFirst() {
+        firstNode = firstNode.get().next;
     }
 }

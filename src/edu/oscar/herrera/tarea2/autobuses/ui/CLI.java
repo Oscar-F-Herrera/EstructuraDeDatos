@@ -1,4 +1,4 @@
-package tarea2.autobuses.ui;
+package edu.oscar.herrera.tarea2.autobuses.ui;
 
 import java.util.Scanner;
 
