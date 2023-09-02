@@ -1,4 +1,4 @@
-package tarea2.futbol.clases;
+package edu.oscar.herrera.tarea2.futbol.clases;
 
 public class Player {
     //Atributos

@@ -1,13 +1,13 @@
-package tarea2.futbol.ui;
+package edu.oscar.herrera.tarea2.futbol.ui;
 
-import tarea2.futbol.clases.Player;
-import tarea2.utils.ListaEnlazada;
-import tarea2.utils.Node;
+import edu.oscar.herrera.tarea2.futbol.clases.Player;
+import edu.oscar.herrera.utils.ListaEnlazada;
+import edu.oscar.herrera.utils.Node;
 
 import java.util.Optional;
 import java.util.Scanner;
 
-import static tarea2.futbol.process.PartidoFutbol.createPlayer;
+import static edu.oscar.herrera.tarea2.futbol.process.PartidoFutbol.createPlayer;
 
 /**
  * Mediante esta clase el usuario ingresa los datos para llenar los equipos

@@ -1,7 +1,7 @@
-package tarea2.autobuses.process;
+package edu.oscar.herrera.tarea2.autobuses.process;
 
-import tarea2.autobuses.ui.CLI;
-import tarea2.utils.ListaEnlazada;
+import edu.oscar.herrera.tarea2.autobuses.ui.CLI;
+import edu.oscar.herrera.utils.ListaEnlazada;
 
 import java.util.Scanner;
 

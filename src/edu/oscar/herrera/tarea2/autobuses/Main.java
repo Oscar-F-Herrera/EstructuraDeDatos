@@ -1,6 +1,6 @@
-package tarea2.autobuses;
+package edu.oscar.herrera.tarea2.autobuses;
 
-import tarea2.autobuses.process.AutobusPrograma;
+import edu.oscar.herrera.tarea2.autobuses.process.AutobusPrograma;
 
 /**
  * Esta clase contiene el método main
