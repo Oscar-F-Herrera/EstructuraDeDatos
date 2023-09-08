@@ -14,6 +14,7 @@ public class Notaciones {
      * @return la notacion postfija de la operacion
      */
     public static String convertirNotacion(String notacion) {
+
         byte prioridadPredecesor = 0;
         String notacionPostfija = "";
         Stack<Character> pila = new Stack<>();
@@ -37,7 +38,7 @@ public class Notaciones {
                     pila.push(elemento);
                 } else if (prioridadOperador > prioridadPredecesor) {
                     pila.push(elemento);
-                } else {
+                } else if (prioridadOperador < prioridadPredecesor){
                     while (pila.size() > 0) {
                         notacionPostfija = notacionPostfija + pila.pop().get();
                     }
@@ -105,11 +106,11 @@ public class Notaciones {
      */
     public static byte obtenerPrioridadOperador(char elemento) {
         if (elemento == '+' || elemento == '-') {
-            return 0;
-        } else if (elemento == '*' || elemento == '/') {
             return 1;
-        } else {
+        } else if (elemento == '*' || elemento == '/') {
             return 2;
+        } else {
+            return 3;
         }
     }
 
