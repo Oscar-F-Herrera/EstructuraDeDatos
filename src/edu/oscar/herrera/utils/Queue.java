@@ -46,4 +46,8 @@ public class Queue <E> {
             lista.add(data.get());
         }
     }
+
+    public void showQueue(){
+        lista.showList();
+    }
 }
