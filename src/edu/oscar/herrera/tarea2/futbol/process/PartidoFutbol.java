@@ -1,7 +1,7 @@
-package tarea2.futbol.process;
+package edu.oscar.herrera.tarea2.futbol.process;
 
 
-import tarea2.futbol.clases.Player;
+import edu.oscar.herrera.tarea2.futbol.clases.Player;
 
 /**
  * Esta clase tiene el proceso para crear un jugador

@@ -1,6 +1,6 @@
-package tarea2.futbol;
+package edu.oscar.herrera.tarea2.futbol;
 
-import tarea2.futbol.ui.CLI;
+import edu.oscar.herrera.tarea2.futbol.ui.CLI;
 
 /**
  * Esta clase contiene el método main
