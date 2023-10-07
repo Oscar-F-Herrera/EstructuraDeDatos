@@ -14,7 +14,7 @@ public class PerformanceTester {
      * @param sorter
      */
     public static void testPerformance(Sorter sorter) {
-        final int RANGO = 1_000;
+        final int RANGO = 2_000;
         final int ITERACIONES = 500;
         final int INCREMENTOS = 100;
 
