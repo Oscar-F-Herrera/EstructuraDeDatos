@@ -262,6 +262,46 @@ public class SorterFactory {
             };
 
 
+            case SECUENCIAL -> new Sorter() {
+                @Override
+                public void sort(int[] N) {
+                    MOVIMIENTOS = 0;
+                    COMPARACIONES = 0;
+
+                    int end = N.length;
+                    for (int i = 0; i < end; i++) {
+                        COMPARACIONES++;
+                        if (N[i] == end) {
+                            MOVIMIENTOS++;
+                            return;
+                        }
+                    }
+                }
+            };
+
+
+            case BINARIO -> new Sorter() {
+                @Override
+                public void sort(int[] N) {
+                    MOVIMIENTOS = 0;
+                    COMPARACIONES = 0;
+
+                    int end = N.length;
+                    int left = 0, right = end - 1;
+                    while (left <= right) {
+                        int m = left + (right - left) / 2;
+                        COMPARACIONES++;
+                        if (N[m] == end) {
+                            MOVIMIENTOS++;
+                            break;
+                        }
+                        if (N[m] < end)
+                            left = m + 1;
+                        else
+                            right = m - 1;
+                    }
+                }
+            };
             default -> throw new IllegalStateException("Unexpected value: " + method);
         };
     }

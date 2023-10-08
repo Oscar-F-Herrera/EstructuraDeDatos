@@ -17,5 +17,7 @@ public class Main {
         //PerformanceTester.testPerformance(SorterFactory.getSorter(SorterMethods.MERGE));
         //PerformanceTester.testPerformance(SorterFactory.getSorter(SorterMethods.QUICK));
         //PerformanceTester.testPerformance(SorterFactory.getSorter(SorterMethods.HEAP));
+        //PerformanceTester.testPerformance(SorterFactory.getSorter(SorterMethods.SECUENCIAL));
+        //PerformanceTester.testPerformance(SorterFactory.getSorter(SorterMethods.BINARIO));
     }
 }
