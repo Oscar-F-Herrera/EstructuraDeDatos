@@ -1,6 +1,6 @@
 import org.junit.Assert;
 import org.junit.Test;
-import tarea2.utils.ListaEnlazada;
+import edu.oscar.herrera.utils.ListaEnlazada;
 
 import java.util.Optional;
 
@@ -106,6 +106,44 @@ public class ListaEnlazadaTest {
         Assert.assertTrue(lista.contains(5));
         Assert.assertTrue(lista.contains(78));
         Assert.assertFalse(lista.contains(105));
+        Assert.assertEquals(2,lista.size());
+    }
+
+    //pruebas para metodos addfirst y removefirst
+    @Test
+    public void addFirstTest(){
+        ListaEnlazada<Integer> lista = new ListaEnlazada<>();
+        lista.addFirst(5);
+        lista.addFirst(78);
+        lista.addFirst(105);
+        Assert.assertTrue(lista.get(0).get()==105);
+        Assert.assertFalse(lista.get(0).get()==5);
+        Assert.assertEquals(3,lista.size());
+    }
+
+    @Test
+    public void addFirst_and_add_Test(){
+        ListaEnlazada<Integer> lista = new ListaEnlazada<>();
+        lista.addFirst(5);
+        lista.add(78);
+        lista.addFirst(105);
+        Assert.assertTrue(lista.get(0).get()==105);
+        Assert.assertTrue(lista.get(1).get()==5);
+        Assert.assertTrue(lista.get(2).get()==78);
+        Assert.assertEquals(3,lista.size());
+    }
+
+    @Test
+    public void removeFirstTest(){
+        ListaEnlazada<Integer> lista = new ListaEnlazada<>();
+        lista.add(5);
+        lista.add(78);
+        lista.add(105);
+        lista.removeFirst();
+
+        Assert.assertFalse(lista.contains(5));
+        Assert.assertTrue(lista.get(0).get()==78);
+        Assert.assertTrue(lista.get(1).get()==105);
         Assert.assertEquals(2,lista.size());
     }
 }
