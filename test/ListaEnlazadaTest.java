@@ -1,6 +1,6 @@
 import org.junit.Assert;
 import org.junit.Test;
-import tarea2.utils.ListaEnlazada;
+import edu.oscar.herrera.utils.ListaEnlazada;
 
 import java.util.Optional;
 
