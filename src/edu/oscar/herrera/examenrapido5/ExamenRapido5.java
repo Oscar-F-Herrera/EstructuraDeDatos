@@ -17,9 +17,11 @@ public class ExamenRapido5 {
                     continue;
                 }
 
+                /*
                 if (!isValidPlace(solution, row, column)){
                     continue;
                 }
+                 */
 
                 int[] solutionClone = solution.clone();
                 boolean[] visitedClone = visited.clone();
@@ -30,6 +32,7 @@ public class ExamenRapido5 {
         }
     }
 
+    /*
     boolean isValidPlace(int[] solution, int row, int column){
         if (r1 == r2 || c1 == c2){
             return false;
@@ -46,4 +49,5 @@ public class ExamenRapido5 {
         }
         return true;
     }
+     */
 }
