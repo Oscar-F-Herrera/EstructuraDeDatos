@@ -34,6 +34,11 @@ public class BinarySearchNode {
         return left;
     }
 
+    /**
+     * Establece el nodo izquierdo
+     *
+     * @param left El nodo a establecer
+     */
     public void setLeft(BinarySearchNode left) {
         this.left = left;
     }
@@ -47,6 +52,11 @@ public class BinarySearchNode {
         return right;
     }
 
+    /**
+     * Establece el nodo derecho
+     *
+     * @param right El nodo a establecer
+     */
     public void setRight(BinarySearchNode right) {
         this.right = right;
     }
@@ -60,6 +70,11 @@ public class BinarySearchNode {
         return data;
     }
 
+    /**
+     * Establece el dato que almacena este nodo
+     *
+     * @param data El dato que almacena este nodo
+     */
     public void setData(int data) {
         this.data = data;
     }
